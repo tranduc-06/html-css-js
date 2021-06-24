@@ -1,0 +1,33 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+label{
+    float: left;
+    width: 120px;
+}
+.HangMoi{
+    font-size: small;
+    padding-left: 10px;
+}
+
+input{
+    margin-bottom: 5px;
+}
+.box
+{
+    clear: both;
+}
+
+.Truongbatbuoc
+{
+    background-color: aqua;
+}
+
+span
+{
+    font-size: small;
+    color: red;
+
+}
+

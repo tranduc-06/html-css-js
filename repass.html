@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<meta charset="utf8">
+<head>
+    <title>repass</title>
+    <link rel="stylesheet" href="repass.css">
+    
+</head>
+
+<body>
+<form action="" method="POST">
+    <div>
+        <label class="HangMoi"> Họ tên: </label>
+        <input type="text" id="hoten" name="hoten" class="Truongbatbuoc" autofocus onkeyup="DoKeyup(event, this, 'diachi');">
+        <span id="loi_hoten" class="baoloi"></span>
+        <br/>
+    </div>
+    
+    <div>
+        <label class="HangMoi">Địa chỉ</label>
+        <input type="text" id="diachi" name="diachi">
+        <br>
+    </div>
+
+
+    <div> 
+        <label class="HangMoi box">Giới tính:</label>
+        <input type="radio" id="Nam" name="Giới tính" value="Nam">
+        <label for="Nam">Nam</label>
+        <input type="radio" id="Nữ" name="Giới tính" value="Nữ">
+        <label for="Nữ">Nữ</label>
+        <br>
+    </div>
+
+    <div>
+        <label class="HangMoi">Ngày sinh:</label>
+        <input type="text" id="ngaysinh" name="ngaysinh" placeholder="nn/tt/nnnn" class="Truongbatbuoc">
+        <span id="loi_ngaysinh" class="baoloi"></span>
+        <br>
+    </div>
+
+    <div>
+        <label class="HangMoi">Email:</label>
+        <input type="text" name="email" id="email" class="Truongbatbuoc">
+        <span id="loi_email" class="baoloi"></span>
+        <br>
+    </div>
+    <div>
+        <label class="HangMoi">Điện thoại:</label>
+        <input type="text" id="dienthoai" name="dienthoai">
+        <br>
+    </div>
+            
+    <div>
+        <label class="HangMoi box">Khóa đăng kí:</label>
+        <input type="checkbox" id="Tiếng Anh" name="Ngành học" value="Tiếng Anh">
+        <label for="Tiếng Anh">Tiếng Anh</label>
+        <input type="checkbox" id="Quản trị" name="Ngành học" value="Quản trị">
+        <label for="Quản trị">Quản trị</label>
+        <input type="checkbox" id="CNTT" name="Ngành học" value="CNTT">
+        <label for="CNTT">CNTT</label>
+        <br>
+    </div>
+
+    <div>
+        <label class="HangMoi">Tên sử dụng:</label>
+        <input type="text" id="tensudung" name="tensudung" class="Truongbatbuoc">
+        <span id="loi_ten" class="baoloi"></span>
+        <br>
+    </div>
+
+    <div>
+        <label class="HangMoi">Mật khẩu:</label>
+        <input type="password" name="pass" id="pass" class="Truongbatbuoc">
+        <span id="loi_pass" class="baoloi"></span>
+        <br>
+    </div>
+
+    <div>
+        <label class="HangMoi">Gõ lại mật khẩu:</label>
+        <input type="password" name="repass" id="repass" class="Truongbatbuoc">
+        <span id="loi_repass" class="baoloi"></span>
+        <br>
+    </div>
+
+    <div>
+        <label class="HangMoi">Ghi chú:</label>
+        <textarea id="ghichu" name="ghi chu"></textarea>
+        <br>
+    </div>
+
+    <div>
+        <label class="HangMoi">Ảnh chân dung:</label>
+        <input type="file" name="file1" id="file1" accept=".png,.jpg">
+        <br>
+    </div>
+
+    <div>
+        <label class="HangMoi">&nbsp;</label>
+        <input type="button" onclick="Chapnhan(); return false;" value="Chấp nhận">
+        <input type="button" onclick="Boqua();" value="Bỏ qua" >
+        
+    </div>
+ </form>     
+    <script src="repass.js"></script>          
+</body>
